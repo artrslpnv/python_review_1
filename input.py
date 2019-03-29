@@ -67,8 +67,8 @@ if a==3:
         if row!='\n':
             for symbol in row:
                 lab.labirint[i][j]=int(j)
-                i+=1
                 j+=1
+        i+=1        
     lab.finding_path((1,1),(2*h-1,2*w-1))
     print('do u like to print the solution?')
     answer=input()
