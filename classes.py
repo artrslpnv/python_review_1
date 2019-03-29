@@ -127,7 +127,10 @@ class Lab:
         for i in range(self.h):
             print('\n')
             for j in range(self.w):
-                print(self.labirint[i][j], end=" ")
+                if self.labirint[i][j]==1:
+                    print('-', end=" ")
+                elif self.labirint[i][j]==:
+                    print('#', end=" ")    
 
     def finding_path(self, fromm, to):
         #нахождение кратчайшего пути от одной вершины к другой с помощью бфс(как не странно тоже переписано с плюсов,с
