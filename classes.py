@@ -129,7 +129,7 @@ class Lab:
             for j in range(self.w):
                 if self.labirint[i][j]==1:
                     print('-', end=" ")
-                elif self.labirint[i][j]==:
+                elif self.labirint[i][j]==0:
                     print('#', end=" ")    
 
     def finding_path(self, fromm, to):
