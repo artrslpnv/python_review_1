@@ -130,7 +130,9 @@ class Lab:
                 if self.labirint[i][j]==1:
                     print('-', end=" ")
                 elif self.labirint[i][j]==0:
-                    print('#', end=" ")    
+                    print('#', end=" ")
+                else:
+                    print(self.labirint[i][j], end= " ")
 
     def finding_path(self, fromm, to):
         #нахождение кратчайшего пути от одной вершины к другой с помощью бфс(как не странно тоже переписано с плюсов,с
@@ -167,5 +169,5 @@ class Lab:
                 visited.add(i)
         v = to
         while (v != -1):
-            self.labirint[v[0]][v[1]] = '.'
+            self.labirint[v[0]][v[1]] = 'p'
             v = ancsectors[v]
