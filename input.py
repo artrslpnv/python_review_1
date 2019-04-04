@@ -27,7 +27,7 @@ if a == 1:
         for i in lab.labirint:
             file.write('\n')
             for j in i:
-                if j == '.':
+                if j == 'p':
                     j = 1
                 file.write(str(j))
 if a == 2:
