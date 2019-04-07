@@ -1,7 +1,7 @@
 import sys
 import classes
 
-a = sys.argv[1]
+a = int(sys.argv[1])
 if a == 1:
     m = int(input())
     n = int(input())
