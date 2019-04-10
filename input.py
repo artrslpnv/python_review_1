@@ -52,7 +52,7 @@ if a == 2:
         name = input()
         file = open(name, 'w')
         file.write(str(Graph1.size1) + '\n' + str(Graph1.size2))
-        for i in lab:
+        for i in lab.labirint:
             file.write('\n')
             for j in i:
                 if j == '.':
