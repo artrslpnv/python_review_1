@@ -1,4 +1,4 @@
-impoimport sys
+import sys
 import classes
 
 a = int(sys.argv[1])
@@ -88,6 +88,3 @@ if a == 3:
                     lab.labirint[i][j] = int(item)
                     j += 1
     lab.printing()
-
-
-
