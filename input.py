@@ -80,11 +80,3 @@ if a == 3:
         lab.finding_path((1, 1), (2 * h - 1, 2 * w - 1))
         lab.printing()
 
-        s = file.readline()
-        if s != '\n':
-            j = 0
-            for item in s:
-                if (item != '\n'):
-                    lab.labirint[i][j] = int(item)
-                    j += 1
-    lab.printing()
