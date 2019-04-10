@@ -1,4 +1,4 @@
-import sys
+impoimport sys
 import classes
 
 a = int(sys.argv[1])
@@ -55,10 +55,9 @@ if a == 2:
         for i in lab.labirint:
             file.write('\n')
             for j in i:
-                if j == '.':
+                if j == 'p':
                     j = 1
                 file.write(str(j))
-
 if a == 3:
     print('enter a file name')
     file = open(input())
@@ -80,3 +79,15 @@ if a == 3:
     if (answer == 'yes'):
         lab.finding_path((1, 1), (2 * h - 1, 2 * w - 1))
         lab.printing()
+
+        s = file.readline()
+        if s != '\n':
+            j = 0
+            for item in s:
+                if (item != '\n'):
+                    lab.labirint[i][j] = int(item)
+                    j += 1
+    lab.printing()
+
+
+
